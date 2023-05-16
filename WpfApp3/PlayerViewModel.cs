@@ -40,5 +40,7 @@ namespace WpfApp3
                 }
             }
         }
+
+        public Player P => player;
     }
 }

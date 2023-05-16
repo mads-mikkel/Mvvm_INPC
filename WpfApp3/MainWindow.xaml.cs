@@ -27,7 +27,16 @@ namespace WpfApp3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            var vm = DataContext as PlayerViewModel;
+            vm.CurrentScore = "99 pts.";
+            if (vm.P.CurrentScore != 99)
+            {
+                MessageBox.Show("Nej");
+            }
+            else
+            {
+                MessageBox.Show("Jubii");
+            }
         }
     }
 }
